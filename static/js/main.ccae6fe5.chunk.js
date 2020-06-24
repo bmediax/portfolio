@@ -1,0 +1,2 @@
+(this["webpackJsonpbmediax-portfolio"]=this["webpackJsonpbmediax-portfolio"]||[]).push([[0],{11:function(e,t,n){e.exports=n(22)},16:function(e,t,n){},22:function(e,t,n){"use strict";n.r(t);var a=n(0),o=n.n(a),r=n(8),l=n.n(r),i=n(10);n(16);var c=function(){return o.a.createElement(o.a.Fragment,null,o.a.createElement("h1",null," Bmediax Portfolio "))};l.a.render(o.a.createElement(i.a,null,o.a.createElement(c,null)),document.getElementById("root"))}},[[11,1,2]]]);
+//# sourceMappingURL=main.ccae6fe5.chunk.js.map
