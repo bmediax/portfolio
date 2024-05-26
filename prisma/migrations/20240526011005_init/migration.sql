@@ -1,0 +1,7 @@
+-- CreateTable
+CREATE TABLE "Refs" (
+    "id" BIGSERIAL NOT NULL,
+    "created_at" TIMESTAMPTZ(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "Refs_pkey" PRIMARY KEY ("id")
+);
