@@ -1,8 +1,9 @@
 import { NavProps } from "./Nav.types";
+import { cn } from "@nextui-org/react";
 
 const Nav = ({ theme = "auto" }: NavProps) => {
   return (
-    <div className="dark">
+    <div className={cn(theme !== "auto" && theme)}>
       <nav className="bg-brand-light-50 dark:bg-brand-dark-100">
         <div>
           {/* Name */}
