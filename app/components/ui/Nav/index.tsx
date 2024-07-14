@@ -1,30 +1,39 @@
+import Link from "next/link";
 import { NavProps } from "./Nav.types";
 import { cn } from "@nextui-org/react";
 
 const Nav = ({ theme = "auto" }: NavProps) => {
   return (
-    <div className={cn(theme !== "auto" && theme)}>
-      <nav className="bg-brand-light-50 dark:bg-brand-dark-100">
-        <div>
+    <div className={cn(theme !== "auto" && theme, "sticky top-0 shadow-sm")}>
+      <nav className="bg-brand-light-50 dark:bg-brand-dark-100 py-4">
+        <div className="flex items-center justify-between container">
           {/* Name */}
-          <div>
-            <span className="text-brand-light-50 dark:text-brand-light-50">
+          <div className="flex-1">
+            <span className="text-brand-dark-500 dark:text-brand-light-50">
               Brian Moreno
             </span>{" "}
-            <span className="text-brand-light-50">•</span>{" "}
+            <span className="text-brand-light-500 dark:text-brand-light-50">
+              •
+            </span>{" "}
             <span className="text-brand-light-500 dark:text-brand-light-400">
               Full-Stack Enginner
             </span>
           </div>
 
-          <ul>
-            <li>Works</li>
-            <li>Meet Brian</li>
-            <li>Contact</li>
+          <ul className="flex-1 flex items-center gap-3 justify-center text-center">
+            <li>
+              <Link href="work">Works</Link>
+            </li>
+            <li>
+              <Link href="meet-brian">Meet Brian</Link>
+            </li>
+            <li>
+              <Link href="contact">Contact</Link>
+            </li>
             {/* <li>Best Hits</li> */}
           </ul>
 
-          <div>
+          <div className="flex-1 justify-self-end w-full flex items-center justify-end gap-3">
             <span>IG</span>
             <span>GH</span>
             <span>L/D</span>
