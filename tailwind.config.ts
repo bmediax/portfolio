@@ -1,13 +1,13 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -52,6 +52,32 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        brand: {
+          light: {
+            50: "rgb(var(--brand-light-50) / <alpha-value>)",
+            100: "rgb(var(--brand-light-100) / <alpha-value>)",
+            200: "rgb(var(--brand-light-200) / <alpha-value>)",
+            300: "rgb(var(--brand-light-300) / <alpha-value>)",
+            400: "rgb(var(--brand-light-400) / <alpha-value>)",
+            500: "rgb(var(--brand-light-500) / <alpha-value>)",
+            600: "rgb(var(--brand-light-600) / <alpha-value>)",
+          },
+          dark: {
+            50: "rgb(var(--brand-dark-50) / <alpha-value>)",
+            100: "rgb(var(--brand-dark-100) / <alpha-value>)",
+            200: "rgb(var(--brand-dark-200) / <alpha-value>)",
+            300: "rgb(var(--brand-dark-300) / <alpha-value>)",
+            400: "rgb(var(--brand-dark-400) / <alpha-value>)",
+            500: "rgb(var(--brand-dark-500) / <alpha-value>)",
+            600: "rgb(var(--brand-dark-600) / <alpha-value>)",
+          },
+          primary: {
+            100: "rgb(var(--brand-brand-100) / <alpha-value>)",
+            200: "rgb(var(--brand-brand-200) / <alpha-value>)",
+            300: "rgb(var(--brand-brand-300) / <alpha-value>)",
+            400: "rgb(var(--brand-brand-400) / <alpha-value>)",
+          },
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -75,6 +101,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
