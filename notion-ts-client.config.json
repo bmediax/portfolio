@@ -1,0 +1,42 @@
+{
+  "ignore": [],
+  "databases": {
+    "93e2339c-35f2-489e-9f21-15cc85d978f6": {
+      "_name": "Bmediax - Ref",
+      "varName": "bmediaxCompany",
+      "pathName": "bmediax-company",
+      "properties": {
+        "T%5CAh": {
+          "_name": "Name",
+          "_type": "rich_text",
+          "varName": "name",
+          "readOnly": false
+        },
+        "iwCt": {
+          "_name": "Industry",
+          "_type": "select",
+          "varName": "industry",
+          "readOnly": false
+        },
+        "jR%3Ao": {
+          "_name": "Short Name",
+          "_type": "rich_text",
+          "varName": "shortName",
+          "readOnly": false
+        },
+        "~N%5Cs": {
+          "_name": "Location",
+          "_type": "rich_text",
+          "varName": "location",
+          "readOnly": false
+        },
+        "title": {
+          "_name": "Company Id",
+          "_type": "title",
+          "varName": "companyId",
+          "readOnly": false
+        }
+      }
+    }
+  }
+}
