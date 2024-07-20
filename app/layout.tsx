@@ -1,9 +1,10 @@
+import "@radix-ui/themes/styles.css";
 import "./styles/globals.css";
 
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-import Nav from '@ui/Nav';
 import { NextUIProvider } from "@nextui-org/react";
+import { Theme } from "@radix-ui/themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Nav />
-        <NextUIProvider>{children}</NextUIProvider>
+        <NextUIProvider>
+          <Theme>{children}</Theme>
+        </NextUIProvider>
       </body>
     </html>
   );

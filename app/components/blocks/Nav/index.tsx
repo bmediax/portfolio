@@ -20,15 +20,30 @@ const Nav = ({ theme = "auto" }: NavProps) => {
             </span>
           </div>
 
-          <ul className="flex-1 flex items-center gap-3 justify-center text-center">
+          <ul className="flex-1 flex items-center gap-8 justify-center text-center">
             <li>
-              <Link href="work">Works</Link>
+              <Link
+                href="work"
+                className="text-brand-dark-500 dark:text-brand-light-50"
+              >
+                Works
+              </Link>
             </li>
             <li>
-              <Link href="meet-brian">Meet Brian</Link>
+              <Link
+                href="meet-brian"
+                className="text-brand-dark-500 dark:text-brand-light-50"
+              >
+                Meet Brian
+              </Link>
             </li>
             <li>
-              <Link href="contact">Contact</Link>
+              <Link
+                href="contact"
+                className="text-brand-dark-500 dark:text-brand-light-50"
+              >
+                Contact
+              </Link>
             </li>
             {/* <li>Best Hits</li> */}
           </ul>
