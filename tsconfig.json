@@ -16,7 +16,8 @@
     "paths": {
       "@/*": ["./*"],
       "@components/*": ["components/*"],
-      "@ui/*": ["components/ui/*"],
+      "@ui/*": ["./components/ui/*"],
+      "@utils/*": ["app/utils/*"]
     },
     "plugins": [
       {
